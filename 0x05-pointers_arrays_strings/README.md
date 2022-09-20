@@ -1,1 +1,1 @@
-This program is to demonstrate pointer, arrays and strings in C
+This program covers pointers, arrays and strings in C language
