@@ -4,17 +4,19 @@
 /**
 *_puts - prints a string
 * @str: string to print
-* when it succeeds, return no error
+* Description: prints a string
+* On success: return no error
 */
 
 void _puts(char *str)
 {
-int i = 0;
+	int i = 0;
 
-while(*(str + i) != '\0')
-{
-putchar(*(str + i));
-i++;
+	while (*(str + i) != '\0')
+	{
+		putchar(*(str + i));
+		i++;
+	}
+	putchar(10);
 }
-putchar(10);
-}
+
