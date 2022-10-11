@@ -10,7 +10,7 @@
  * Return: struct dog
  * if fails, return NULL
  */
-dog_t *new_dog(char *name, float age, char *owner);
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *my_dog;
 	int a, fname, fowner;
