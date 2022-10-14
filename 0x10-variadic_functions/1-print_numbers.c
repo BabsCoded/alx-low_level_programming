@@ -2,9 +2,9 @@
 #include <stdarg.h>
 #include <stdlib.h>
 /**
- * print_numbers - prints numbers then a line
- * @separator: string to be printed in between
- * @n: number of integers
+ * print_numbers - prints numbers followed by a new line.
+ * @separator: string to be printed between numbers.
+ * @n: number of integers passed to the function
  *
  * Return: void
  */
@@ -18,8 +18,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		printf("%d", va_arg(numbers, int));
-		if ( i < n - 1 && separator != NULL)
-			printf("%s", separator)
+		if (i < n - 1 && separator != NULL)
+			printf("%s", separator);
 	}
 	printf("\n");
 
