@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- *array_iterator - funciton that executes functions
- *@array: array of element
- *@size: size of array
- *action: function pointer.
+ * array_iterator - function that executes function given as a param
+ * @array: array of element
+ * @size: size of array
+ * @action: function pointer
  *
- * Return: void
+ * Return: nothing
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
@@ -15,7 +15,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	{
 		for (i = 0; i < size; i++)
 		{
-			action(array[1]);
+			action(array[i]);
 		}
 	}
 }
