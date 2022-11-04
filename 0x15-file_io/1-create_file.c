@@ -7,7 +7,7 @@
  *
  * Return: 1 if successful, -1 if otherwise
  */
-int create_file(const char *filename, char *text_content)
+int create_file(const char *filename, char *text_content);
 {
 	int fd;
 	int nletters;
@@ -29,10 +29,10 @@ int create_file(const char *filename, char *text_content)
 
 	rwr = write(fd, text_content, nletters);
 
-	if (rwr == -)
+	if (rwr == -1)
 		return (-1);
 
-	clsoe(fd);
+	close(fd);
 
 	return (1);
 }
